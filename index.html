@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>MENU</h2>
+        <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Transaction</a></li>
+            <li><a href="#">Calendar</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>Food Menu</h1>
+            <div class="filters">
+                <button>First Meal</button>
+                <button>Before Training</button>
+                <button>After Training</button>
+            </div>
+        </header>
+
+        <div class="menu-grid">
+            <!-- Example dish item -->
+            <div class="dish-card">
+                <img src="dish1.jpg" alt="Dish">
+                <div class="dish-info">
+                    <h3>Dish Name</h3>
+                    <p>200g</p>
+                    <p>$4.99</p>
+                </div>
+                <button class="add-to-order">Add</button>
+            </div>
+            <!-- Add more dishes here -->
+        </div>
+    </div>
+
+    <div class="order-section">
+        <h2>My Order</h2>
+        <ul class="order-list">
+            <!-- Orders will be appended here -->
+        </ul>
+        <div class="order-total">
+            <p>Total: $<span id="total">0.00</span></p>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
